@@ -1,5 +1,3 @@
-import * as Icon from "react-feather";
-
 import { PHONE } from "@constants";
 
 export const ContactInfo = () => {
@@ -9,9 +7,7 @@ export const ContactInfo = () => {
         <div className="row justify-content-center">
           <div className="col-lg-4 col-md-6 col-sm-6">
             <div className="contact-info-box">
-              <div className="icon">
-                <Icon.Mail />
-              </div>
+              <div className="icon">{/* <Icon.Mail /> */}</div>
               <h3></h3>
               <p>
                 <a href="mailto:admin@za-it.ru">admin@za-it.ru</a>
@@ -21,9 +17,7 @@ export const ContactInfo = () => {
 
           <div className="col-lg-4 col-md-6 col-sm-6">
             <div className="contact-info-box">
-              <div className="icon">
-                <Icon.Phone />
-              </div>
+              <div className="icon">{/* <Icon.Phone /> */}</div>
               <h3></h3>
               <p>
                 <a href={`tel:${PHONE}`}>{PHONE}</a>

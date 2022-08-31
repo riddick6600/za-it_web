@@ -1,26 +1,7 @@
 import React, { useState } from "react";
-import InputMask from "react-input-mask";
-
-import { useForm } from "react-hook-form";
-import axios from "axios";
-import Swal from "sweetalert2";
-import withReactContent from "sweetalert2-react-content";
-const MySwal = withReactContent(Swal);
 
 const alertContent = () => {
-  MySwal.fire({
-    title: "Мы скоро перезвоним!",
-    // text: "Your message was successfully send and will back to you soon",
-    icon: "success",
-    timer: 2000,
-    timerProgressBar: true,
-    showConfirmButton: false,
-  });
-};
-
-// Form initial state
-const INITIAL_STATE = {
-  number: "",
+  alert("Мы скоро перезвоним!");
 };
 
 const templateUrl =
@@ -28,9 +9,6 @@ const templateUrl =
 
 export const ContactForm = () => {
   const [number, setNumber] = useState("");
-  const {
-    formState: { errors },
-  } = useForm();
 
   const onChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setNumber(event.target.value);
@@ -72,20 +50,12 @@ export const ContactForm = () => {
                 <div className="col-lg-3"></div>
                 <div className="col-lg-6">
                   <div className="form-group">
-                    <InputMask
-                      mask="+9 (999) 999 99-99"
+                    <input
                       onChange={onChange}
                       placeholder="Ваш телефон"
                       className="form-control"
                       value={number}
                     />
-
-                    <div
-                      className="invalid-feedback"
-                      style={{ display: "block" }}
-                    >
-                      {errors.number && "Number is required."}
-                    </div>
                   </div>
                 </div>
 

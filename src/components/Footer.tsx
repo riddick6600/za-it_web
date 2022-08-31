@@ -1,4 +1,3 @@
-import * as Icon from "react-feather";
 import { NAME, PHONE } from "@constants";
 import { Link } from "react-router-dom";
 
@@ -38,11 +37,11 @@ export const Footer = () => {
               <h3>Контакты</h3>
               <ul className="footer-contact-info">
                 <li>
-                  <Icon.Mail />
+                  {/* <Icon.Mail /> */}
                   <a href="mailto:admin@za-it.ru">admin@za-it.ru</a>
                 </li>
                 <li>
-                  <Icon.PhoneCall />
+                  {/* <Icon.PhoneCall /> */}
                   <a href={`tel:${PHONE}`}>{PHONE}</a>
                 </li>
               </ul>

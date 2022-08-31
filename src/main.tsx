@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import { App } from "./App";
 
 import "@public/css/bootstrap.min.css";
-import "animate.css";
+// import "animate.css";
 import "@public/css/boxicons.min.css";
 import "@public/css/flaticon.css";
 import "@public/css/slick.css";
