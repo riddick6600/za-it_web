@@ -1,5 +1,3 @@
-import React from "react";
-
 export const AboutUsContent = () => {
   return (
     <div className="about-area pt-0 ptb-80">

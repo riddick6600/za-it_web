@@ -1,7 +1,6 @@
-import React from "react";
 import { ContactInfo, ContactForm, Navbar, Footer } from "@components";
 
-export const Contact = () => {
+export const Contacts = () => {
   return (
     <>
       <Navbar />

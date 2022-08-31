@@ -1,4 +1,3 @@
-import React from "react";
 import * as Icon from "react-feather";
 import { NAME, PHONE } from "@constants";
 import { Link } from "react-router-dom";

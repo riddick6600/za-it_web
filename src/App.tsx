@@ -5,7 +5,7 @@ import {
   Route,
   useLocation,
 } from "react-router-dom";
-import { Main, Service, Contact } from "@pages";
+import { Main, Service, Contacts } from "@pages";
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -25,7 +25,7 @@ export const App = () => {
         <Routes>
           <Route path="/" element={<Main />} />
           <Route path="/landing" element={<Service />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/contact" element={<Contacts />} />
           <Route path="*" element={<Main />} />
         </Routes>
       </Router>
