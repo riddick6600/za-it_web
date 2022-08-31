@@ -1803,6 +1803,9 @@
     font-size: 30px;
     margin-bottom: 15px;
   }
+  .main-banner .hero-content {
+    text-align: center;
+  }
   .main-banner .banner-form {
     padding: 50px;
     margin: 45px 0 !important;
