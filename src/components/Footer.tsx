@@ -25,7 +25,12 @@ export const Footer = () => (
 
         <div className="col-lg-3 col-md-6">
           <div className="single-footer-widget">
-            <Link to="/contact">
+            <Link
+              onClick={() => {
+                window.scrollTo(0, 0);
+              }}
+              to="/contact"
+            >
               <h3>Контакты</h3>
             </Link>
 

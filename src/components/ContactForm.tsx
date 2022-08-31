@@ -55,6 +55,7 @@ export const ContactForm = () => {
                       placeholder="Ваш телефон"
                       className="form-control"
                       value={number}
+                      type="tel"
                     />
                   </div>
                 </div>
