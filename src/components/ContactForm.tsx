@@ -16,6 +16,7 @@ export const ContactForm = () => {
 
   const onSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    document.getElementsByClassName("contact-form")[0].remove();
     try {
       const fetchUrl = new URL(templateUrl);
       fetchUrl.searchParams.append("FIELDS[TITLE]", `${number} Заявка с сайта`);
