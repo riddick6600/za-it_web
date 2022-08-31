@@ -5,6 +5,7 @@ export const Navbar = () => {
   const [menu, setMenu] = useState(true);
 
   const toggleNavbar = () => {
+    window.scrollTo(0, 0);
     setMenu(!menu);
   };
 
