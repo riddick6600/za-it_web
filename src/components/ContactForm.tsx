@@ -32,11 +32,11 @@ export const ContactForm = () => {
     formState: { errors },
   } = useForm();
 
-  const onChange = (event) => {
+  const onChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setNumber(event.target.value);
   };
 
-  const onSubmit = async (e) => {
+  const onSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
       const fetchUrl = new URL(templateUrl);
@@ -73,8 +73,7 @@ export const ContactForm = () => {
                 <div className="col-lg-6">
                   <div className="form-group">
                     <InputMask
-                      mask="+9 999 999 99-99"
-                      maskChar=" "
+                      mask="+9 (999) 999 99-99"
                       onChange={onChange}
                       placeholder="Ваш телефон"
                       className="form-control"

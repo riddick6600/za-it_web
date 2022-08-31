@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-export const Navbar = ({ transparent }) => {
+export const Navbar = () => {
   const [menu, setMenu] = React.useState(true);
 
   const toggleNavbar = () => {
@@ -12,9 +12,9 @@ export const Navbar = ({ transparent }) => {
     let elementId = document.getElementById("header");
     document.addEventListener("scroll", () => {
       if (window.scrollY > 170) {
-        elementId.classList.add("is-sticky");
+        elementId?.classList.add("is-sticky");
       } else {
-        elementId.classList.remove("is-sticky");
+        elementId?.classList.remove("is-sticky");
       }
     });
   });
@@ -26,12 +26,8 @@ export const Navbar = ({ transparent }) => {
     ? "navbar-toggler navbar-toggler-right collapsed"
     : "navbar-toggler navbar-toggler-right";
 
-  const headerClassName = transparent
-    ? "headroom navbar-style-two"
-    : "headroom";
-
   return (
-    <header id="header" className={headerClassName}>
+    <header id="header" className="headroom">
       <div className="startp-nav">
         <div className="container">
           <nav className="navbar navbar-expand-md navbar-light">

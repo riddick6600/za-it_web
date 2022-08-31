@@ -10,6 +10,7 @@ export default defineConfig({
     host: "0.0.0.0",
     port: 8081,
   },
+  publicDir: "public",
   resolve: {
     alias: {
       "@abi": path.resolve(__dirname, "src/abi"),
@@ -22,5 +23,4 @@ export default defineConfig({
       "@public": path.resolve(__dirname, "src/public"),
     },
   },
-  publicDir: "public",
 });
