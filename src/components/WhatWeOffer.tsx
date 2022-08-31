@@ -1,6 +1,6 @@
 export const WhatWeOffer = () => {
   return (
-    <div className="solutions-area ptb-80">
+    <div className="solutions-area">
       <div className="container">
         <div className="section-title">
           <h2>Наши решения</h2>

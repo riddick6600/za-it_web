@@ -1,7 +1,7 @@
 export const Features = () => {
   return (
     <>
-      <div className="iot-features-area ptb-80 bg-f7fafd">
+      <div className="iot-features-area ptb-50 bg-f7fafd">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6 iot-features-content">

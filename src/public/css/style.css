@@ -161,6 +161,15 @@ h6 {
   padding-bottom: 80px;
 }
 
+.ptb-50 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.pt-50 {
+  padding-top: 50px;
+}
+
 .pt-80 {
   padding-top: 80px;
 }
@@ -388,7 +397,6 @@ label {
   font-weight: 600;
 }
 .section-title p {
-  max-width: 520px;
   margin: 0 auto;
 }
 .section-title .bar {
@@ -1420,7 +1428,6 @@ Why Choose US CSS
 Services CSS
 =================================================*/
 .services-area {
-  overflow: hidden;
 }
 
 .services-content .section-title {

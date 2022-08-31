@@ -2,7 +2,7 @@ import { MAIL, NAME, PHONE } from "@constants";
 import { Link } from "react-router-dom";
 
 export const Footer = () => (
-  <footer className="footer-area bg-f7fafd">
+  <footer className="footer-area">
     <div className="container">
       <div>
         <img src="/images/map.png" className="map" alt="map" />

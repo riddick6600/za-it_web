@@ -6,6 +6,7 @@ import {
   useLocation,
 } from "react-router-dom";
 import { Main, Service, Contacts } from "@pages";
+import { Footer } from "@components";
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -19,16 +20,19 @@ const ScrollToTop = () => {
 
 export const App = () => {
   return (
-    <div className="App">
-      <Router>
-        <ScrollToTop />
-        <Routes>
-          <Route path="/" element={<Main />} />
-          <Route path="/landing" element={<Service />} />
-          <Route path="/contact" element={<Contacts />} />
-          <Route path="*" element={<Main />} />
-        </Routes>
-      </Router>
-    </div>
+    <>
+      <div className="App">
+        <Router>
+          <ScrollToTop />
+          <Routes>
+            <Route path="/" element={<Main />} />
+            <Route path="/landing" element={<Service />} />
+            <Route path="/contact" element={<Contacts />} />
+            <Route path="*" element={<Main />} />
+          </Routes>
+          <Footer />
+        </Router>
+      </div>
+    </>
   );
 };

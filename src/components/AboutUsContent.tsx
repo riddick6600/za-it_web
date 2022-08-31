@@ -1,6 +1,6 @@
 export const AboutUsContent = () => {
   return (
-    <div className="about-area pt-0 ptb-80">
+    <div className="about-area">
       <div className="container-fluid">
         <div className="row align-items-center">
           <div className="col-lg-6 col-md-12">

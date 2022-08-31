@@ -1,4 +1,4 @@
-import { ContactInfo, ContactForm, Navbar, Footer } from "@components";
+import { ContactInfo, ContactForm, Navbar } from "@components";
 
 export const Contacts = () => {
   return (
@@ -6,7 +6,6 @@ export const Contacts = () => {
       <Navbar />
       <ContactForm />
       <ContactInfo />
-      <Footer />
     </>
   );
 };
