@@ -1,13 +1,14 @@
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 export const Navbar = () => {
-  const [menu, setMenu] = React.useState(true);
+  const [menu, setMenu] = useState(true);
 
   const toggleNavbar = () => {
     setMenu(!menu);
   };
 
-  React.useEffect(() => {
+  useEffect(() => {
     let elementId = document.getElementById("header");
     document.addEventListener("scroll", () => {
       if (window.scrollY > 170) {
