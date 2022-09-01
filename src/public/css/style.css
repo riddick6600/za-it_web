@@ -9223,4 +9223,7 @@ Go Top CSS
   background-color: #483e3e;
 }
 
-/*# sourceMappingURL=style.css.map */
+.page404 {
+  text-align: center;
+  margin: 200px 0 100px;
+}
