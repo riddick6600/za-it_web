@@ -1,3 +1,5 @@
+import React from "react";
+
 export const WhatWeOffer = () => {
   return (
     <div className="solutions-area">
