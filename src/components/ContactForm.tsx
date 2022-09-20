@@ -5,7 +5,7 @@ const alertContent = () => {
 };
 
 const templateUrl =
-  "https://za-it.bitrix24.ru/rest/1/ae0hygmqx539sfic/crm.lead.add.json";
+  "https://za-it.bitrix24.ru/rest/1/2xvxtr03fgn08346/crm.lead.add.json";
 
 export const ContactForm = () => {
   const [number, setNumber] = useState("");
