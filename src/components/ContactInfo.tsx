@@ -1,3 +1,4 @@
+import React from "react";
 import { MAIL, PHONE } from "@constants";
 
 export const ContactInfo = () => {

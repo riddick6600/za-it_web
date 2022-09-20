@@ -1,3 +1,5 @@
+import React from "react";
+
 export const AboutUsContent = () => {
   return (
     <div className="about-area">
